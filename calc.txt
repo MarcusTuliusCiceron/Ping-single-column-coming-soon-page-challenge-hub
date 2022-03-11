@@ -1,0 +1,6 @@
+vm = 1% of small dimension
+
+small dimension = 1023
+
+
+1vm = 10,23px

@@ -1,0 +1,155 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 11px;
+  text-align: center;
+  color: #4f7df3;
+  min-height: 100vh;
+}
+
+.page {
+  padding: 0 39.1vmin;
+  padding-top: 8.6vmin;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.page__logo {
+  width: 8.8vmin;
+  height: 2.9vmin;
+  background-image: url(logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 5.4vmin;
+}
+
+.page__title {
+  color: #969696;
+  font-weight: 300;
+  font-size: 4.3vmin;
+  margin-bottom: 2.15vmin;
+}
+
+.page__title strong {
+  color: black;
+  font-weight: 700;
+}
+
+.page__guidelines {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 4vmin;
+}
+
+.page__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  height: 4.9vmin;
+  margin-bottom: 4px;
+}
+
+.page__form__input {
+  -webkit-box-flex: 33;
+      -ms-flex-positive: 33;
+          flex-grow: 33;
+  border-radius: 2.45vmin;
+  border: solid 1px #969696;
+  padding: 15px;
+}
+
+.page__form__input:focus {
+  outline: none;
+}
+
+.page__form__button {
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
+  border-radius: 2.45vmin;
+  background-color: #4f7df3;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.page__form__button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.page__form__button:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.page__form__validation {
+  width: 100%;
+  font-size: 14px;
+  text-align: left;
+  color: red;
+  margin-bottom: 7.3vmin;
+  visibility: hidden;
+}
+
+.page__form__validation.visible {
+  visibility: visible;
+}
+
+.page__illustration {
+  background-image: url(illustration-dashboard.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 45.5vmin;
+  margin-bottom: 6.4vmin;
+}
+
+.page__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.page__icons ion-icon {
+  color: #4f7df3;
+  font-size: 30px;
+  border: solid 2px #4f7df3;
+  border-radius: 50%;
+  padding: 6px;
+}
+
+.page__icons .icon_2, .page__icons .icon_1 {
+  margin-right: 20px;
+}
+
+.page__copyright {
+  color: #969696;
+}
+/*# sourceMappingURL=style.css.map */
