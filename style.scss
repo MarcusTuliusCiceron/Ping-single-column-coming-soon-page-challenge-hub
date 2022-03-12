@@ -25,7 +25,6 @@ body{
     align-items: center;
     font-family: 'Libre Franklin', sans-serif;
     width: 630px;
-    border: solid 1px red;
     margin: auto;
     @include breakpoint-down(small){
         width: 330px
