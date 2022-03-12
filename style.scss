@@ -18,57 +18,84 @@ body{
 }
 
 .page{
-    padding: 0 39.1vmin ;
-    padding-top: 8.6vmin; 
+    
+    padding-top: 90px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Libre Franklin', sans-serif;
+    width: 630px;
+    border: solid 1px red;
+    margin: auto;
+    @include breakpoint-down(small){
+        width: 330px
+    }
     
 
     &__logo{
-        width: 8.8vmin;
-        height: 2.9vmin;
+        width: 90px;
+        height: 30px;
         background-image: url(logo.svg);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        margin-bottom: 5.4vmin;
+        margin-bottom: 60px;
+        @include breakpoint-down(small){
+            width: 75px;
+            height: 25px;
+        }
     }
     &__title{
         color: $gray;
         font-weight: 300;
-        font-size: 4.3vmin;
+        font-size: 43px;
         strong{
             color: black;
             font-weight: 700;
         }
-        margin-bottom: 2.15vmin;
+        margin-bottom: 24px;
+        @include breakpoint-down(small){
+            font-size: 30px;
+        }
     }
     &__guidelines{
         color: black;
         font-size: 20px;
-        margin-bottom: 4vmin;
+        margin-bottom: 40px;
+        @include breakpoint-down(small){
+            font-size: 15px;
+        }
     }
     &__form{
         display: flex;
         width: 100%;
         gap: 10px;
-        height: 4.9vmin;
+        height: 60px;
         margin-bottom: 4px;
+        @include breakpoint-down(small){
+            flex-direction: column;
+            height: auto;
+        }
         
         &__input{
-            flex-grow: 33;
-            border-radius:  2.45vmin;
+            width: 66%;
+            border-radius:  30px;
             border: solid 1px $gray;
             padding: 15px;
             &:focus{
                 outline: none;
             }
+            @include breakpoint-down(small){
+                height: 50px;
+                width: 100%;
+            }
+        }
+        &__input.invalid{
+            border: solid 1px red;
         }
         &__button{
-            flex-grow: 10;
-            border-radius: 2.45vmin;
+            width: 33%;
+            border-radius: 30px;
             background-color: $blue;
             border: none;
             color: white;
@@ -81,6 +108,10 @@ body{
             &:active{
                 transform: scale(1.05);
             }
+            @include breakpoint-down(small){
+                height: 50px;
+                width: 100%;
+            }
         }
         
     }
@@ -88,12 +119,21 @@ body{
         width: 100%;
         font-size: 14px;
         text-align: left;
-        color: red;
-        margin-bottom: 7.3vmin;
+        margin-bottom: 70px;
         visibility: hidden;
+        @include breakpoint-down(small){
+            margin-bottom: 0;
+        }
     }
     &__form__validation.visible{
         visibility: visible;
+    }
+    &__form__validation.valid{
+        
+        color: green;
+    }
+    &__form__validation.invalid{
+        color: red;
     }
     &__illustration{
         background-image: url(illustration-dashboard.png);
@@ -101,8 +141,11 @@ body{
         background-position: center;
         background-repeat: no-repeat;
         width: 100%;
-        height: 45.5vmin;
-        margin-bottom: 6.4vmin;
+        height: 390px;
+        margin-bottom: 70px;
+        @include breakpoint-down(small){
+            margin-bottom: 0;
+        }
     }
     &__icons{
         display: flex;
@@ -120,6 +163,7 @@ body{
     }
     &__copyright{
         color: $gray;
+        margin-bottom: 48px;
     }
 
 }
